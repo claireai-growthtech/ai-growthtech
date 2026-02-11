@@ -2,193 +2,155 @@ import Link from "next/link";
 
 export default function ServicesPage() {
   return (
-    <main style={{ padding: "4rem", fontFamily: "system-ui", maxWidth: 960 }}>
-      {/* PAGE HEADER */}
-      <header>
-        <h1 style={{ fontSize: "2.75rem", marginBottom: "1rem" }}>
-          The Advantage Engine™
+    <main style={{ padding: "4rem", fontFamily: "system-ui" }}>
+      <header style={{ maxWidth: 900 }}>
+        <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
+          How AEO works
         </h1>
 
-        <p style={{ fontSize: "1.35rem", lineHeight: 1.7 }}>
-          A 90-day system designed to move brands from invisible to the{" "}
-          <strong>default authoritative answer</strong> across AI platforms.
+        <p style={{ fontSize: "1.25rem", lineHeight: 1.6 }}>
+          Answer Engine Optimisation (AEO) is how your brand becomes “cite-ready”
+          for AI-generated answers. We focus on the structural and authority
+          signals AI systems rely on — so you appear more often in ChatGPT, Gemini and Perplexity.
         </p>
 
-        <p style={{ lineHeight: 1.7, marginTop: "1.25rem" }}>
-          Delivered by <strong>AI Growth Tech</strong> in partnership with{" "}
-          <strong>Advantage Labs</strong>, The Advantage Engine™ is an end-to-end
-          Answer Engine Optimisation (AEO) framework that combines{" "}
-          <strong>Voice, Positioning, Authority, and Optimisation</strong> into a
-          single, compounding engine.
+        <p style={{ marginTop: "0.75rem", color: "#555", lineHeight: 1.6 }}>
+          Our goal is simple: move your AEO Visibility Score into the{" "}
+          <strong>7–10</strong> range, where brands are far more likely to be
+          recommended and cited.
         </p>
 
         <div style={{ marginTop: "1.5rem", display: "flex", gap: "1rem" }}>
           <Link
             href="/aeo-visibility-score"
             style={{
-              padding: "0.9rem 1.2rem",
+              padding: "0.8rem 1.1rem",
               borderRadius: 10,
               border: "1px solid #111",
               textDecoration: "none",
               color: "#111",
-              fontWeight: 700,
+              fontWeight: 600,
             }}
           >
-            Get your AEO Visibility Score
+            Check your AEO Visibility Score
           </Link>
 
           <Link
             href="/contact"
             style={{
-              padding: "0.9rem 1.2rem",
+              padding: "0.8rem 1.1rem",
               borderRadius: 10,
               border: "1px solid #ddd",
               textDecoration: "none",
               color: "#111",
-              fontWeight: 700,
+              fontWeight: 600,
+            }}
+          >
+            Talk to us
+          </Link>
+        </div>
+      </header>
+
+      <section style={{ marginTop: "3rem", maxWidth: 900 }}>
+        <h2 style={{ fontSize: "1.75rem" }}>The 90-day approach</h2>
+
+        <ol style={{ lineHeight: 1.9, marginTop: "0.75rem" }}>
+          <li>
+            <strong>Days 1–14: Audit & baseline</strong> — Visibility Score,
+            “cite-readiness” gaps, content map, schema and technical checks.
+          </li>
+          <li>
+            <strong>Days 15–45: Fix the foundations</strong> — page structure,
+            internal linking, schema, topic clarity, and high-impact pages.
+          </li>
+          <li>
+            <strong>Days 46–90: Build authority signals</strong> — topic hubs,
+            supporting pages, FAQs, evidence/proof signals, and iteration based
+            on lift.
+          </li>
+        </ol>
+
+        <p style={{ marginTop: "0.75rem", color: "#555", lineHeight: 1.6 }}>
+          <strong>Guarantee:</strong> we guarantee score improvement within 90
+          days when our recommendations are fully implemented.
+        </p>
+      </section>
+
+      <section style={{ marginTop: "2.5rem", maxWidth: 900 }}>
+        <h2 style={{ fontSize: "1.75rem" }}>What we optimise</h2>
+
+        <ul style={{ lineHeight: 1.9, marginTop: "0.75rem" }}>
+          <li>
+            <strong>Answer-first structure</strong> — clear headings, direct
+            answers, scannable sections, and “AI-friendly” page layouts.
+          </li>
+          <li>
+            <strong>Schema & entity clarity</strong> — structured data that helps
+            AI systems understand who you are, what you do, and what you offer.
+          </li>
+          <li>
+            <strong>Topic coverage & hubs</strong> — content clusters that signal
+            authority on the questions your buyers ask.
+          </li>
+          <li>
+            <strong>Proof & trust signals</strong> — case studies, credentials,
+            comparisons, FAQs, and evidence AI systems can cite confidently.
+          </li>
+          <li>
+            <strong>Internal linking strategy</strong> — a clear “source of truth”
+            path for key topics and services.
+          </li>
+        </ul>
+      </section>
+
+      <section style={{ marginTop: "2.5rem", maxWidth: 900 }}>
+        <h2 style={{ fontSize: "1.75rem" }}>Typical outcomes</h2>
+
+        <ul style={{ lineHeight: 1.9, marginTop: "0.75rem" }}>
+          <li>Improved Visibility Score and cite-readiness</li>
+          <li>Better brand presence in AI answers for your priority topics</li>
+          <li>Higher-quality inbound intent (because AI answers reflect buying questions)</li>
+          <li>Clear roadmap of what to fix next</li>
+        </ul>
+      </section>
+
+      <section style={{ marginTop: "2.5rem", maxWidth: 900 }}>
+        <h2 style={{ fontSize: "1.75rem" }}>Next step</h2>
+        <p style={{ lineHeight: 1.7 }}>
+          Start with your Visibility Score. You’ll get a baseline, a clear
+          improvement plan, and a recommended path to reach the 7–10 range.
+        </p>
+
+        <div style={{ marginTop: "1rem", display: "flex", gap: "1rem" }}>
+          <Link
+            href="/aeo-visibility-score"
+            style={{
+              padding: "0.8rem 1.1rem",
+              borderRadius: 10,
+              border: "1px solid #111",
+              textDecoration: "none",
+              color: "#111",
+              fontWeight: 600,
+            }}
+          >
+            Get your Visibility Score
+          </Link>
+
+          <Link
+            href="/contact"
+            style={{
+              padding: "0.8rem 1.1rem",
+              borderRadius: 10,
+              border: "1px solid #ddd",
+              textDecoration: "none",
+              color: "#111",
+              fontWeight: 600,
             }}
           >
             Book a call
           </Link>
         </div>
-      </header>
-
-      {/* HOW IT WORKS */}
-      <section style={{ marginTop: "3.5rem" }}>
-        <h2 style={{ fontSize: "2rem" }}>How the Advantage Engine™ works</h2>
-
-        {/* PHASE 1 */}
-        <section style={{ marginTop: "2rem" }}>
-          <h3>🧠 Phase 1: Advantage Voice</h3>
-          <p>
-            <strong>Train AI Brand Authority</strong>
-          </p>
-          <p style={{ lineHeight: 1.7 }}>
-            We ensure AI systems clearly understand who you are, what you do,
-            and why your brand should be trusted. This phase removes ambiguity
-            and establishes your canonical AI-readable voice.
-          </p>
-          <ul style={{ lineHeight: 1.9 }}>
-            <li>AI brand and entity clarity audit</li>
-            <li>Core answer narratives and messaging</li>
-            <li>Foundational content refinement</li>
-          </ul>
-        </section>
-
-        {/* PHASE 2 */}
-        <section style={{ marginTop: "2rem" }}>
-          <h3>🎯 Phase 2: Advantage Positioning</h3>
-          <p>
-            <strong>Capture the Answer Engine Market</strong>
-          </p>
-          <p style={{ lineHeight: 1.7 }}>
-            We identify the real questions AI systems are already answering in
-            your market and position your brand to own those answers.
-          </p>
-          <ul style={{ lineHeight: 1.9 }}>
-            <li>AI question and intent mapping</li>
-            <li>Competitive answer gap analysis</li>
-            <li>Answer ownership and topic strategy</li>
-          </ul>
-        </section>
-
-        {/* PHASE 3 */}
-        <section style={{ marginTop: "2rem" }}>
-          <h3>🛡️ Phase 3: Advantage Authority</h3>
-          <p>
-            <strong>Cross-Platform Trust Validation</strong>
-          </p>
-          <p style={{ lineHeight: 1.7 }}>
-            This phase reinforces the trust signals AI systems rely on when
-            deciding who to recommend. Most brands stall here — which is why
-            they remain stuck at low AEO visibility scores.
-          </p>
-          <ul style={{ lineHeight: 1.9 }}>
-            <li>Authority signal alignment (on-site & off-site)</li>
-            <li>Schema deployment (FAQ, Article, Organization)</li>
-            <li>Cross-platform consistency checks</li>
-          </ul>
-        </section>
-
-        {/* PHASE 4 */}
-        <section style={{ marginTop: "2rem" }}>
-          <h3>📈 Phase 4: Advantage Optimisation</h3>
-          <p>
-            <strong>Compounding AI Visibility</strong>
-          </p>
-          <p style={{ lineHeight: 1.7 }}>
-            We continuously optimise how your content is extracted, reused, and
-            cited by AI systems, turning visibility into a compounding growth
-            engine.
-          </p>
-          <ul style={{ lineHeight: 1.9 }}>
-            <li>AEO Visibility Score tracking (1–10)</li>
-            <li>Content optimisation for AI extraction</li>
-            <li>Ongoing visibility and authority improvements</li>
-          </ul>
-        </section>
       </section>
-
-      {/* OUTCOME */}
-      <section
-        style={{
-          marginTop: "3.5rem",
-          padding: "2rem",
-          border: "1px solid #ddd",
-          borderRadius: 14,
-          maxWidth: 960,
-        }}
-      >
-        <h2>The outcome: Default Authoritative Answer</h2>
-        <p style={{ lineHeight: 1.7 }}>
-          When all four phases of The Advantage Engine™ are implemented together,
-          AI systems don’t just mention your brand — they{" "}
-          <strong>recommend it</strong>.
-        </p>
-
-        <ul style={{ lineHeight: 1.9 }}>
-          <li>Cited first in AI-generated answers</li>
-          <li>Recommended confidently and repeatedly</li>
-          <li>Visibility compounds without paid media</li>
-          <li>Trust is pre-built before a buyer arrives</li>
-        </ul>
-      </section>
-
-      {/* ENTRY POINT */}
-      <section style={{ marginTop: "3rem", maxWidth: 960 }}>
-        <h2>Your entry point: AEO Visibility Score</h2>
-        <p style={{ lineHeight: 1.7 }}>
-          Every engagement starts with an <strong>AEO Visibility Score</strong> —
-          a simple 1–10 diagnostic that shows how ready your site is to be
-          selected as an authoritative AI answer.
-        </p>
-
-        <p style={{ lineHeight: 1.7 }}>
-          Most companies score between <strong>2–4</strong>. To be consistently
-          recommended by AI, brands typically need to reach{" "}
-          <strong>7–10</strong>.
-        </p>
-
-        <Link
-          href="/aeo-visibility-score"
-          style={{
-            display: "inline-block",
-            marginTop: "1.5rem",
-            padding: "0.9rem 1.2rem",
-            borderRadius: 10,
-            border: "1px solid #111",
-            textDecoration: "none",
-            color: "#111",
-            fontWeight: 700,
-          }}
-        >
-          Get your AEO Visibility Score
-        </Link>
-      </section>
-
-      <p style={{ marginTop: "2.5rem" }}>
-        <Link href="/">← Back to home</Link>
-      </p>
     </main>
   );
 }
