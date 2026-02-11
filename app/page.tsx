@@ -5,12 +5,16 @@ export default function HomePage() {
     <main style={{ padding: "4rem", fontFamily: "system-ui" }}>
       <header style={{ maxWidth: 900 }}>
         <h1 style={{ fontSize: "3rem", marginBottom: "1rem" }}>
-          Get found in AI answers.
+          Get your business found in AI answers.
         </h1>
 
         <p style={{ fontSize: "1.25rem", lineHeight: 1.6 }}>
-          AI-GrowthTech improves your AEO Visibility Score so your brand shows up
-          more often in ChatGPT, Google AI, Perplexity and answer engines.
+          AI Growth Tech helps businesses improve their AEO Visibility Score —
+          so their brand appears more often in ChatGPT, Google AI and Perplexity.
+        </p>
+
+        <p style={{ marginTop: "0.75rem", color: "#555", lineHeight: 1.6 }}>
+          Built for growth-stage teams who care about pipeline, not vanity traffic.
         </p>
 
         <div style={{ marginTop: "1.5rem", display: "flex", gap: "1rem" }}>
@@ -25,7 +29,7 @@ export default function HomePage() {
               fontWeight: 600,
             }}
           >
-            Get your Visibility Score
+            Check your AEO Visibility Score
           </Link>
 
           <Link
@@ -39,7 +43,7 @@ export default function HomePage() {
               fontWeight: 600,
             }}
           >
-            View services
+            How AEO works
           </Link>
         </div>
       </header>
@@ -47,9 +51,9 @@ export default function HomePage() {
       <section style={{ marginTop: "3rem", maxWidth: 900 }}>
         <h2 style={{ fontSize: "1.75rem" }}>What is AEO?</h2>
         <p style={{ lineHeight: 1.7 }}>
-          Answer Engine Optimization (AEO) is the practice of structuring content
-          so AI systems can understand it, extract clear answers, and confidently
-          cite your site.
+          Answer Engine Optimisation (AEO) is the practice of structuring
+          content so AI systems can understand it, extract clear answers,
+          and confidently cite your site.
         </p>
       </section>
 
@@ -67,41 +71,6 @@ export default function HomePage() {
             <strong>Monitor</strong> — track lift and iterate
           </li>
         </ol>
-      </section>
-
-      <section style={{ marginTop: "2.5rem", maxWidth: 900 }}>
-        <h2 style={{ fontSize: "1.75rem" }}>FAQs</h2>
-
-        <details style={{ marginTop: "0.75rem" }}>
-          <summary style={{ fontWeight: 600 }}>
-            What is an AEO Visibility Score?
-          </summary>
-          <p style={{ lineHeight: 1.7 }}>
-            A 1–10 score showing how “cite-ready” your site is for AI answers,
-            based on structure, clarity, schema, authority signals and topic
-            coverage.
-          </p>
-        </details>
-
-        <details style={{ marginTop: "0.75rem" }}>
-          <summary style={{ fontWeight: 600 }}>
-            How is AEO different from SEO?
-          </summary>
-          <p style={{ lineHeight: 1.7 }}>
-            SEO targets rankings; AEO targets being selected as a source in AI
-            generated answers and summaries.
-          </p>
-        </details>
-
-        <details style={{ marginTop: "0.75rem" }}>
-          <summary style={{ fontWeight: 600 }}>
-            How quickly can we improve the score?
-          </summary>
-          <p style={{ lineHeight: 1.7 }}>
-            Many sites see improvements after initial fixes (structure + schema +
-            key pages), with compounding gains from topic hubs.
-          </p>
-        </details>
       </section>
     </main>
   );
