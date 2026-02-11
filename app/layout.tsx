@@ -1,92 +1,34 @@
 import type { Metadata } from "next";
-import Link from "next/link";
-import { Geist, Geist_Mono } from "next/font/google";
-import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "AI-GrowthTech | The Advantage Engine™",
+  title: "AI Growth Tech | Get Found in AI Answers",
   description:
-    "Become the default authoritative answer in AI. AEO strategy, authority and optimisation delivered by AI Growth Tech × Advantage Labs.",
+    "AI Growth Tech helps B2B brands improve their AEO Visibility Score so they appear more often in ChatGPT, Google AI and Perplexity.",
+  openGraph: {
+    title: "AI Growth Tech | Get Found in AI Answers",
+    description:
+      "Improve your AEO Visibility Score and increase how often your brand appears in ChatGPT, Google AI and Perplexity.",
+    url: "https://ai-growthtech-site.vercel.app",
+    siteName: "AI Growth Tech",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Growth Tech | Get Found in AI Answers",
+    description:
+      "Answer Engine Optimisation (AEO) for businesses that want to be visible in AI-generated answers.",
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable}`}
-        style={{ margin: 0 }}
-      >
-        <header
-          style={{
-            padding: "1.25rem 4rem",
-            borderBottom: "1px solid #eee",
-            fontFamily: "system-ui",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "space-between",
-            gap: "1rem",
-          }}
-        >
-          <Link
-            href="/"
-            style={{
-              textDecoration: "none",
-              color: "#111",
-              fontWeight: 800,
-              letterSpacing: "-0.02em",
-            }}
-          >
-            AI-GrowthTech
-          </Link>
-
-          <nav style={{ display: "flex", gap: "1rem", flexWrap: "wrap" }}>
-            <Link
-              href="/services"
-              style={{ textDecoration: "none", color: "#111" }}
-            >
-              Services
-            </Link>
-            <Link
-              href="/aeo-visibility-score"
-              style={{ textDecoration: "none", color: "#111" }}
-            >
-              Visibility Score
-            </Link>
-            <Link
-              href="/contact"
-              style={{ textDecoration: "none", color: "#111" }}
-            >
-              Contact
-            </Link>
-          </nav>
-        </header>
-
-        <main>{children}</main>
-
-        <footer
-          style={{
-            padding: "2rem 4rem",
-            borderTop: "1px solid #eee",
-            fontFamily: "system-ui",
-          }}
-        >
-          <small>© {new Date().getFullYear()} AI-GrowthTech</small>
-        </footer>
-      </body>
+      <body>{children}</body>
     </html>
   );
 }
+
