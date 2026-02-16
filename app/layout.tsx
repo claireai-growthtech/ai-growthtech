@@ -1,22 +1,35 @@
+import "./globals.css";
 import type { Metadata } from "next";
+import SiteHeader from "./components/SiteHeader";
+import SiteFooter from "./components/SiteFooter";
 
 export const metadata: Metadata = {
-  title: "AI Growth Tech | Get Found in AI Answers",
+  metadataBase: new URL("https://www.ai-growthtech.com"),
+  title: {
+    default: "AI Growth Tech",
+    template: "%s | AI Growth Tech",
+  },
   description:
-    "AI Growth Tech helps B2B brands improve their AEO Visibility Score so they appear more often in ChatGPT, Google AI and Perplexity.",
+    "AEO visibility scoring and AI search optimisation for business owners and SaaS founders.",
   openGraph: {
-    title: "AI Growth Tech | Get Found in AI Answers",
+    title: "AI Growth Tech",
     description:
-      "Improve your AEO Visibility Score and increase how often your brand appears in ChatGPT, Google AI and Perplexity.",
-    url: "https://ai-growthtech-site.vercel.app",
+      "AEO visibility scoring and AI search optimisation for business owners and SaaS founders.",
+    url: "https://www.ai-growthtech.com",
     siteName: "AI Growth Tech",
+    images: [
+      {
+        url: "/logo.png",
+        width: 512,
+        height: 512,
+        alt: "AI Growth Tech logo",
+      },
+    ],
+    locale: "en_GB",
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "AI Growth Tech | Get Found in AI Answers",
-    description:
-      "Answer Engine Optimisation (AEO) for businesses that want to be visible in AI-generated answers.",
+  icons: {
+    icon: "/favicon.ico",
   },
 };
 
@@ -25,10 +38,31 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const orgJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "AI Growth Tech",
+    url: "https://www.ai-growthtech.com",
+    logo: "https://www.ai-growthtech.com/logo.png",
+    description:
+      "AEO visibility scoring and AI search optimisation for business owners and SaaS founders.",
+  };
+
   return (
     <html lang="en">
-      <body>{children}</body>
+      <head>
+        <script
+          type="application/ld+json"
+          // eslint-disable-next-line react/no-danger
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
+        />
+      </head>
+
+      <body className="bg-[#fdfaf4] text-[#0f172a] antialiased">
+        <SiteHeader />
+        {children}
+        <SiteFooter />
+      </body>
     </html>
   );
 }
-
