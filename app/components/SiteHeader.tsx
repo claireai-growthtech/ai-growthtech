@@ -20,8 +20,8 @@ export default function SiteHeader() {
             <div className="text-[#d4b46a] text-xl font-semibold tracking-tight">
               AI Growth Tech
             </div>
-            <div className="text-xs text-[#d4b46a]/70 tracking-wide uppercase">
-              Answer Engine Optimisation
+            <div className="text-sm text-[#d4b46a]/80">
+              Innovate faster. Grow smarter.
             </div>
           </div>
         </Link>
