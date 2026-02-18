@@ -6,9 +6,9 @@ export default function HomePage() {
     <main className="bg-[#fdfaf4] text-[#0f172a]">
 
       {/* HERO */}
-      <section className="relative overflow-hidden">
-        <div className="max-w-6xl mx-auto px-6 pt-20 pb-16">
-          <div className="max-w-3xl">
+      <section className="relative overflow-hidden bg-gradient-to-b from-[#fdfaf4] to-[#f6f1e6]">
+        <div className="max-w-6xl mx-auto px-6 pt-28 pb-24">
+          <div className="max-w-4xl">
 
             <div className="inline-flex items-center gap-2 rounded-full border border-[#e8dfcc] bg-white/70 px-4 py-2 text-sm text-[#334155] shadow-sm">
               <span className="font-medium">AEO</span>
@@ -18,11 +18,11 @@ export default function HomePage() {
               <span>AI recommendation</span>
             </div>
 
-            <h1 className="mt-6 text-[40px] md:text-[56px] font-semibold tracking-[-0.015em] leading-[1.08]">
+            <h1 className="mt-8 text-[44px] md:text-[64px] font-semibold tracking-[-0.02em] leading-[1.02]">
               Get Found in AI Answers.
             </h1>
 
-            <p className="mt-6 text-lg md:text-xl leading-relaxed text-[#334155]">
+            <p className="mt-8 text-lg md:text-xl leading-relaxed text-[#334155]">
               AI Growth Tech improves your{" "}
               <span className="font-semibold text-[#0f172a]">
                 AEO Visibility Score
@@ -41,7 +41,7 @@ export default function HomePage() {
               </Link>
             </p>
 
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="mt-12 flex flex-wrap gap-4">
               <Button href="/aeo-visibility-score">
                 Check your AEO Visibility Score
               </Button>
