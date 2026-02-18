@@ -10,15 +10,16 @@ export default function HomePage() {
         <div className="max-w-6xl mx-auto px-6 pt-28 pb-24">
           <div className="max-w-4xl">
 
-            <div className="inline-flex items-center gap-2 rounded-full border border-[#e8dfcc] bg-white/70 px-4 py-2 text-sm text-[#334155] shadow-sm">
-              <span className="font-medium">AEO</span>
+            {/* HERO BANNER (UPGRADED) */}
+            <div className="inline-flex items-center gap-3 rounded-full border border-[#e8dfcc] bg-white/80 px-6 py-3 text-[13px] md:text-sm text-[#334155] shadow-[0_10px_25px_rgba(15,23,42,0.06)] backdrop-blur-sm">
+              <span className="font-semibold tracking-wide">AEO</span>
               <span className="text-[#caa85c]">•</span>
-              <span>Visibility Score</span>
+              <span className="font-medium">Visibility Score</span>
               <span className="text-[#caa85c]">•</span>
-              <span>AI recommendation</span>
+              <span className="font-medium">AI recommendation</span>
             </div>
 
-            <h1 className="mt-8 text-[44px] md:text-[64px] font-semibold tracking-[-0.02em] leading-[1.02]">
+            <h1 className="mt-10 text-[44px] md:text-[64px] font-semibold tracking-[-0.02em] leading-[1.02]">
               Get Found in AI Answers.
             </h1>
 
