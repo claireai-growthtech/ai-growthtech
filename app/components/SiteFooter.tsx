@@ -101,7 +101,7 @@ export default function SiteFooter() {
           <div className="flex items-center gap-6">
             {/* LinkedIn */}
             <a
-              href="https://www.linkedin.com"
+              href="https://www.linkedin.com/company/ai-growth-tech"
               target="_blank"
               rel="noopener noreferrer"
               className="hover:text-white transition"
