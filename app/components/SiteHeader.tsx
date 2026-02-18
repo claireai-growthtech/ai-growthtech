@@ -3,45 +3,53 @@ import Image from "next/image";
 
 export default function SiteHeader() {
   return (
-    <header className="bg-[#13273f] border-b border-[#1e3a5c]">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
+    <header className="bg-[#0f1f33]/95 backdrop-blur-md border-b border-[#1e3a5c] sticky top-0 z-50">
+      <div className="max-w-6xl mx-auto px-6 py-5 flex items-center justify-between">
 
-        {/* Left side – Logo + Brand */}
+        {/* Logo + Brand */}
         <Link href="/" className="flex items-center gap-4">
           <Image
             src="/logo.png"
             alt="AI Growth Tech Logo"
-            width={60}
-            height={60}
+            width={56}
+            height={56}
             priority
           />
 
           <div>
-            <div className="text-[#caa85c] text-xl font-semibold tracking-tight">
+            <div className="text-[#d4b46a] text-xl font-semibold tracking-tight">
               AI Growth Tech
             </div>
-            <div className="text-sm text-[#caa85c]/80">
-              Innovate faster. Grow smarter.
+            <div className="text-xs text-[#d4b46a]/70 tracking-wide uppercase">
+              Answer Engine Optimisation
             </div>
           </div>
         </Link>
 
-
-        {/* Right side – Navigation */}
+        {/* Navigation */}
         <nav className="hidden md:flex items-center gap-8 text-sm font-medium">
+
           <Link
             href="/aeo-visibility-score"
-            className="text-[#caa85c] hover:text-white transition"
+            className="text-[#d4b46a] hover:text-white transition"
           >
             Visibility Score
           </Link>
 
           <Link
             href="/services"
-            className="text-[#caa85c] hover:text-white transition"
+            className="text-[#d4b46a] hover:text-white transition"
           >
-            How AEO works
+            How AEO Works
           </Link>
+
+          <Link
+            href="/contact"
+            className="border border-[#d4b46a]/40 px-5 py-2 rounded-full text-[#d4b46a] hover:bg-[#d4b46a] hover:text-[#0f1f33] transition"
+          >
+            Get Assessment
+          </Link>
+
         </nav>
 
       </div>
