@@ -379,6 +379,62 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+{/* AI PROMPT CAPTURE */}
+<section className="border-t border-[#efe6d3]">
+  <div className="max-w-6xl mx-auto px-6 py-14">
+    <div className="max-w-4xl">
+
+      <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#0f172a]">
+        How businesses are found through AI
+      </h2>
+
+      <p className="mt-4 text-[#334155] leading-relaxed text-lg">
+        Businesses are no longer discovered through search results alone. Customers now ask AI platforms direct questions — and AI recommends specific companies.
+      </p>
+
+      <p className="mt-4 text-[#334155] leading-relaxed">
+        These are examples of the types of questions your business needs to appear for:
+      </p>
+
+      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <div className="rounded-2xl border border-[#e8dfcc] bg-white p-5 shadow-sm">
+          <p className="font-medium text-[#0f172a]">
+            “Who offers the best AI receptionist for small businesses?”
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-[#e8dfcc] bg-white p-5 shadow-sm">
+          <p className="font-medium text-[#0f172a]">
+            “How do I improve my AEO visibility score?”
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-[#e8dfcc] bg-white p-5 shadow-sm">
+          <p className="font-medium text-[#0f172a]">
+            “Which companies help businesses get recommended by ChatGPT?”
+          </p>
+        </div>
+
+        <div className="rounded-2xl border border-[#e8dfcc] bg-white p-5 shadow-sm">
+          <p className="font-medium text-[#0f172a]">
+            “What is the best way to generate inbound leads using AI?”
+          </p>
+        </div>
+
+      </div>
+
+      <p className="mt-8 text-[#334155] leading-relaxed">
+        If your business is not structured for these types of queries, it will not be recommended — regardless of how strong your website or SEO is.
+      </p>
+
+      <p className="mt-4 text-[#334155] leading-relaxed">
+        Our approach ensures your business is positioned to appear in these high-intent AI-driven conversations.
+      </p>
+
+    </div>
+  </div>
+</section>
 
       {/* FAQ */}
       <section className="border-t border-[#efe6d3]">
