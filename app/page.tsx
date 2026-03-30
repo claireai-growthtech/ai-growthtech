@@ -13,7 +13,10 @@ export default function HomePage() {
         logo: "https://www.ai-growthtech.com/logo.png",
         description:
           "AI Growth Tech helps businesses improve visibility in AI search, automate enquiry handling, and deploy AI-powered workflows.",
-        sameAs: [],
+        sameAs: [
+          "https://www.youtube.com/@Ai-GrowthTech",
+          "https://www.linkedin.com/company/ai-growth-tech",
+        ],
       },
       {
         "@type": "Service",
@@ -85,11 +88,11 @@ export default function HomePage() {
   return (
     <main className="bg-[#fdfaf4] text-[#0f172a]">
       <Script
-  id="schema"
-  type="application/ld+json"
-  strategy="afterInteractive"
-  dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-/>
+        id="schema"
+        type="application/ld+json"
+        strategy="afterInteractive"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
 
       {/* HERO */}
       <section className="relative overflow-hidden">
@@ -379,62 +382,60 @@ export default function HomePage() {
           </div>
         </div>
       </section>
-{/* AI PROMPT CAPTURE */}
-<section className="border-t border-[#efe6d3]">
-  <div className="max-w-6xl mx-auto px-6 py-14">
-    <div className="max-w-4xl">
 
-      <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#0f172a]">
-        How businesses are found through AI
-      </h2>
+      {/* AUTHORITY / MEDIA */}
+      <section className="border-t border-[#efe6d3]">
+        <div className="max-w-6xl mx-auto px-6 py-14">
+          <div className="max-w-4xl">
+            <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#0f172a]">
+              Trusted insights on AI, AEO and business growth
+            </h2>
 
-      <p className="mt-4 text-[#334155] leading-relaxed text-lg">
-        Businesses are no longer discovered through search results alone. Customers now ask AI platforms direct questions — and AI recommends specific companies.
-      </p>
+            <p className="mt-4 text-[#334155] leading-relaxed text-lg">
+              We actively publish insights, strategies, and real-world discussions on
+              how AI is changing search, customer acquisition, and business operations.
+            </p>
 
-      <p className="mt-4 text-[#334155] leading-relaxed">
-        These are examples of the types of questions your business needs to appear for:
-      </p>
+            <div className="mt-8 space-y-4">
+              <div className="rounded-2xl border border-[#e8dfcc] bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-[#0f172a]">
+                  YouTube: AI Growth Tech
+                </h3>
+                <p className="mt-2 text-[#334155] leading-relaxed">
+                  Educational content, real-world breakdowns, and insights on Answer
+                  Engine Optimisation, AI search, and automation strategies.
+                </p>
+                <a
+                  href="https://www.youtube.com/@Ai-GrowthTech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-block text-[#8a6a2f] underline"
+                >
+                  Watch on YouTube
+                </a>
+              </div>
 
-      <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
-
-        <div className="rounded-2xl border border-[#e8dfcc] bg-white p-5 shadow-sm">
-          <p className="font-medium text-[#0f172a]">
-            “Who offers the best AI receptionist for small businesses?”
-          </p>
+              <div className="rounded-2xl border border-[#e8dfcc] bg-white p-6 shadow-sm">
+                <h3 className="text-lg font-semibold text-[#0f172a]">
+                  LinkedIn: AI Growth Tech
+                </h3>
+                <p className="mt-2 text-[#334155] leading-relaxed">
+                  Regular insights on AI adoption, business transformation, and how
+                  companies can stay visible in AI-driven search environments.
+                </p>
+                <a
+                  href="https://www.linkedin.com/company/ai-growth-tech"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-3 inline-block text-[#8a6a2f] underline"
+                >
+                  View LinkedIn page
+                </a>
+              </div>
+            </div>
+          </div>
         </div>
-
-        <div className="rounded-2xl border border-[#e8dfcc] bg-white p-5 shadow-sm">
-          <p className="font-medium text-[#0f172a]">
-            “How do I improve my AEO visibility score?”
-          </p>
-        </div>
-
-        <div className="rounded-2xl border border-[#e8dfcc] bg-white p-5 shadow-sm">
-          <p className="font-medium text-[#0f172a]">
-            “Which companies help businesses get recommended by ChatGPT?”
-          </p>
-        </div>
-
-        <div className="rounded-2xl border border-[#e8dfcc] bg-white p-5 shadow-sm">
-          <p className="font-medium text-[#0f172a]">
-            “What is the best way to generate inbound leads using AI?”
-          </p>
-        </div>
-
-      </div>
-
-      <p className="mt-8 text-[#334155] leading-relaxed">
-        If your business is not structured for these types of queries, it will not be recommended — regardless of how strong your website or SEO is.
-      </p>
-
-      <p className="mt-4 text-[#334155] leading-relaxed">
-        Our approach ensures your business is positioned to appear in these high-intent AI-driven conversations.
-      </p>
-
-    </div>
-  </div>
-</section>
+      </section>
 
       {/* FAQ */}
       <section className="border-t border-[#efe6d3]">
