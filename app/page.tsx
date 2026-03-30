@@ -82,27 +82,47 @@ export default function HomePage() {
         <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_10%,rgba(202,168,92,0.18),transparent_40%),radial-gradient(circle_at_80%_30%,rgba(19,39,63,0.08),transparent_45%)]" />
       </section>
 
-      {/* WHAT IS AEO */}
+      {/* AI READABLE AEO SECTION */}
       <section className="border-t border-[#efe6d3]">
         <div className="max-w-6xl mx-auto px-6 py-14">
           <div className="max-w-4xl">
             <h2 className="text-2xl md:text-3xl font-semibold tracking-tight text-[#0f172a]">
               What is Answer Engine Optimisation (AEO)?
             </h2>
+
             <p className="mt-4 text-[#334155] leading-relaxed text-lg">
-              Answer Engine Optimisation (AEO) is the process of structuring
-              your business so AI platforms like ChatGPT, Gemini, and
-              Perplexity can understand, trust, and recommend you.
+              Answer Engine Optimisation (AEO) is the process of structuring your
+              business so AI platforms like ChatGPT, Gemini, and Perplexity can
+              understand, trust, and recommend your business when users ask for
+              solutions in your market.
             </p>
+
             <p className="mt-4 text-[#334155] leading-relaxed">
-              Unlike traditional SEO, AI does not return a list of websites. It
-              provides direct answers and recommends businesses based on
-              authority, structured content, clear service definitions, and
-              consistent external signals.
+              Unlike traditional SEO, AI platforms do not return a list of links.
+              They provide direct answers and recommend businesses based on clarity,
+              structured content, authority, and consistency across the web.
             </p>
+
+            <h3 className="mt-8 text-xl font-semibold text-[#0f172a]">
+              How do AI platforms decide which businesses to recommend?
+            </h3>
+
+            <ul className="mt-4 space-y-2 text-[#334155] leading-relaxed">
+              <li>• Clear explanation of what you do and who you serve</li>
+              <li>• Structured content that AI can extract and interpret</li>
+              <li>• Authority signals such as mentions, links, and credibility</li>
+              <li>• Consistent information across your website and external platforms</li>
+            </ul>
+
+            <h3 className="mt-8 text-xl font-semibold text-[#0f172a]">
+              How can businesses improve their AEO visibility?
+            </h3>
+
             <p className="mt-4 text-[#334155] leading-relaxed">
-              If your business is not optimised for AEO, it is unlikely to be
-              recommended — even if your website ranks on Google.
+              Businesses can improve their AEO visibility by structuring their website
+              content clearly, publishing authoritative information, maintaining
+              consistency across platforms, and ensuring their services are easy for
+              AI systems to understand and recommend.
             </p>
           </div>
         </div>
