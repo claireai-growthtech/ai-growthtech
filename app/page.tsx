@@ -1,8 +1,93 @@
 import Link from "next/link";
 
 export default function HomePage() {
+  const schema = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.ai-growthtech.com/#organization",
+        name: "AI Growth Tech",
+        url: "https://www.ai-growthtech.com/",
+        logo: "https://www.ai-growthtech.com/logo.png",
+        description:
+          "AI Growth Tech helps businesses improve visibility in AI search, automate enquiry handling, and deploy AI-powered workflows.",
+        sameAs: [],
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.ai-growthtech.com/#aeo-service",
+        name: "Answer Engine Optimisation (AEO)",
+        provider: {
+          "@id": "https://www.ai-growthtech.com/#organization",
+        },
+        serviceType: "Answer Engine Optimisation",
+        areaServed: "United Kingdom",
+        url: "https://www.ai-growthtech.com/aeo-visibility-score",
+        description:
+          "Answer Engine Optimisation helps businesses improve their visibility in AI platforms like ChatGPT, Gemini, and Perplexity so they are more likely to be recommended.",
+      },
+      {
+        "@type": "Service",
+        "@id": "https://www.ai-growthtech.com/#ai-receptionist-service",
+        name: "AI Receptionist",
+        provider: {
+          "@id": "https://www.ai-growthtech.com/#organization",
+        },
+        serviceType: "AI Receptionist and enquiry automation",
+        areaServed: "United Kingdom",
+        url: "https://www.ai-growthtech.com/ai-receptionist",
+        description:
+          "AI Receptionist answers calls and website enquiries, captures leads, qualifies prospects, and books appointments automatically.",
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://www.ai-growthtech.com/#faq",
+        mainEntity: [
+          {
+            "@type": "Question",
+            name: "What is an AEO visibility score?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "An AEO visibility score measures how likely your business is to be recommended by AI platforms. A score of 7 to 10 means your business is highly visible and more likely to be suggested to customers.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "What is the difference between AEO and SEO?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "SEO focuses on ranking in search engines like Google. AEO focuses on being recommended by AI platforms like ChatGPT, Gemini, and Perplexity.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "How long does AEO take to work?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "Most businesses begin to see measurable improvements in visibility within 60 to 90 days, depending on their starting point.",
+            },
+          },
+          {
+            "@type": "Question",
+            name: "Do I need both AEO and an AI Receptionist?",
+            acceptedAnswer: {
+              "@type": "Answer",
+              text: "No. They solve different problems. AEO improves visibility. AI Receptionist helps convert enquiries into booked opportunities.",
+            },
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <main className="bg-[#fdfaf4] text-[#0f172a]">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+      />
+
       {/* HERO */}
       <section className="relative overflow-hidden">
         <div className="max-w-6xl mx-auto px-6 pt-10 pb-12 md:pt-14 md:pb-16">
