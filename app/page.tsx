@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Script from "next/script";
 
 export default function HomePage() {
   const schema = {
@@ -83,10 +84,12 @@ export default function HomePage() {
 
   return (
     <main className="bg-[#fdfaf4] text-[#0f172a]">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
-      />
+      <Script
+  id="schema"
+  type="application/ld+json"
+  strategy="afterInteractive"
+  dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+/>
 
       {/* HERO */}
       <section className="relative overflow-hidden">
